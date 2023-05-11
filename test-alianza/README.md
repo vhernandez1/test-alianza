@@ -34,7 +34,7 @@ Este proyecto utiliza MySQL como motor de base de datos. Para configurar la base
 2. Espera a que el IDE importe todas las dependencias necesarias.
 3. Ejecuta la clase `CrudApplication`.
 4. La aplicación se ejecutará en el puerto `8080` por defecto.
-5. Accede a la URL `http://localhost:8080/items` en tu navegador web para verificar que la aplicación está funcionando correctamente.
+5. Accede a la URL `http://localhost:8080/clients` en tu navegador web para verificar que la aplicación está funcionando correctamente.
 
 ¡Claro! A continuación te muestro cómo puedes actualizar el archivo `README.md` para incluir la información sobre la configuración de H2 con el archivo `application.yml`:
 
@@ -117,13 +117,11 @@ Asegúrate de que la carpeta `TestDataBase` exista en la raíz de tu proyecto pa
 
 La API REST proporciona los siguientes endpoints:
 
-| Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| GET | /items | Obtiene todos los elementos |
-| GET | /items/{id} | Obtiene un elemento por su ID |
-| POST | /items | Crea un nuevo elemento |
-| PUT | /items/{id} | Actualiza un elemento existente |
-| DELETE | /items/{id} | Elimina un elemento por su ID |
+| Método | Endpoint            | Descripción                     |
+|--------|---------------------|---------------------------------|
+| GET | /client             | Obtiene todos los Clientes      |
+| GET | /client/{sharedKey} | Obtiene un Cliente por su ID    |
+| POST | /Client             | Crea un nuevo elemento          |
 
 ## Contribución
 
