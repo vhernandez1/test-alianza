@@ -1,0 +1,39 @@
+
+<h2 mat-dialog-title>Create Client</h2>
+<div mat-dialog-content >
+  <form (ngSubmit)="onSubmit()" #createForm="ngForm">
+    <mat-form-field>
+      <mat-label>Shared key</mat-label>
+      <input matInput name="name" [(ngModel)]="client.sharedKey" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Business id</mat-label>
+      <textarea matInput name="description" [(ngModel)]="client.businessId" required></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput name="email" [(ngModel)]="client.email" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Phone</mat-label>
+      <input matInput name="phone" [(ngModel)]="client.phone" required>
+    </mat-form-field>
+<!--     <mat-form-field>
+      <mat-label>Date added</mat-label>
+      <input matInput name="dateAdded" [(ngModel)]="client.dateAdded" required>
+    </mat-form-field> -->
+
+    <mat-form-field appearance="fill">
+      <mat-label>Date added</mat-label>
+      <input matInput [matDatepicker]="picker" name="dateAdded" [(ngModel)]="client.dateAdded" required>
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </form>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="createForm.invalid">Create</button>
+  </div>
+</div>
+
+

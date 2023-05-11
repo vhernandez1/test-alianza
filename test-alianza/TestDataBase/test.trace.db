@@ -1,0 +1,9 @@
+2023-05-10 00:31:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT" not found (this database is empty); SQL statement:
+select c1_0.shared_key,c1_0.business_id,c1_0.date_added,c1_0.email,c1_0.phone from client c1_0 [42104-214]
+2023-05-10 00:31:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT" not found (this database is empty); SQL statement:
+select c1_0.shared_key,c1_0.business_id,c1_0.date_added,c1_0.email,c1_0.phone from client c1_0 [42104-214]
+2023-05-10 00:38:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT" not found (this database is empty); SQL statement:
+select c1_0.shared_key,c1_0.business_id,c1_0.date_added,c1_0.email,c1_0.phone from client c1_0 [42104-214]

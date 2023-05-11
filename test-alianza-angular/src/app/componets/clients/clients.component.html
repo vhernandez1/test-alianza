@@ -1,0 +1,15 @@
+<br>
+<br>
+<br>
+<button mat-raised-button color="primary" (click)="openCreateDialog()">+ New</button>
+<br>
+<br>
+<form class="example-form">
+  <div class="container-form-serch">
+    <mat-form-field class="example-full-width">
+      <mat-label>Shared key</mat-label>
+      <input matInput name="email" [(ngModel)]="sharedId">
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="button-search" (click)="searchClient()">Search</button>
+  </div>
+</form>
